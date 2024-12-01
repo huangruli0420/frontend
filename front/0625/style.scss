@@ -1,0 +1,47 @@
+//SCSS有括號跟分號 SASS只有空白跟縮排
+//$mainColor:rgb(255,255,255);
+$mainColor:#ed6e6e;
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    width: 80px;
+    color: $mainColor;
+    border: 1px solid rgb(169, 28, 28);
+    cursor: pointer;//游標變手
+    transition: 0.3s;//變形時間
+    border-radius: 5px;//邊框導角
+
+    &:hover{//游標碰觸
+        scale: 1.05;
+    }
+
+    &:active{//游標點擊
+        scale: 0.95;
+        /*background-color: $mainColor;
+        color: white;*///點擊反白
+    }
+}
+
+.big{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;//jc
+    align-items: center;//ai
+
+    .flexBox1{
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgb(221, 25, 25);
+    }
+
+    .flexBox2{
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgb(34, 195, 69);
+    }
+}

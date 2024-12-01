@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- meta標籤 -->
+        <meta charset="UTF-8"></meta>
+        <!-- 讓搜尋引擎了解網站，列如搜尋結果的描述欄、作者、搜尋關鍵字、視口(根據裝置調整寬度，初始縮放比100%)-->
+        <meta name = "description" content="this is a xdd site made by a xdd new web developer "/>
+        <meta name="author" content="itsFramme"/>
+        <meta name="keyword" content="itsFramme"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>xdd site</title>
+    </head>    
+    <body>
+        <!-- 基本標籤 --> 
+        <!-- <h1>~<h6>字體大到小 <p>段落 <i>斜體 <b>粗體 <br>換行 <hr>水平線 
+            若兩個標籤中間沒內容，則可在前面的標籤加/即可省略後面的標籤--> 
+        <h1>hello xdd</h1>
+        <p><i><b>xdd</b></i> ddx xpp ppx</p>
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <h1>world xdd</h1>
+        <p><i><b>xdd</b></i> ddx xpp ppx</p>
+
+        <!-- 連結&圖片 -->
+        <!-- <a>超連結，href後面放連結，進出不同資料夾要加資料夾名稱或..\返回，中間加文字讓顯示文字有超連結
+            <img>圖片，src後面可接連結或本地檔案位址，圖片和影片若只調高寬其一就可以保持比例-->
+        <a href="https://7tv.app/emotes/63c2563bb858b11b76ab7555">xddShrug</a>
+        <a href="page2.html">第二頁</a>
+        <a href="page3/page3.html">第二頁</a>
+        <br/>
+        <br/>
+        <img src="xdd.png" width="200" />
+        <img src="https://cdn.7tv.app/emote/63c2563bb858b11b76ab7555/4x.webp"width="200"/>
+        <br/>
+        <br/>
+
+
+        <!--影片 & 嵌入youtube影片
+            影片中間放的是當影片無法顯示時的文字
+            YT影片直接分享然後按嵌入複製代碼-->
+        
+        <video src="Caedrel just cancelled it - John Fishish.mp4" controls width="600">Can't load video xdd</video>
+        </br>
+        </br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a7MXH3ULeaI?si=HlglgSSbUB9FoUt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <!-- 列表 & 表格 <ul>一般列表 <ol>有順序的列表，<li>中間來放列表要顯示的文字
+            可以寫<ol type="A""a""i""I">用英文和羅馬數字大小寫在開頭排序
+            <table>表格 <tr>代表一列，<td>有幾個就代表這一列表格有幾個元素 -->
+        <ol type="I" style = "color:rebeccapurple">
+            <li>Caedrel's Twitch Stream</li>
+            <li>Caedrel's youtube</li>
+            <li>Caedrel Clips youtube</li>
+        </ol>
+        
+        <table width="400" style = "color:red">
+            <tr>
+                <td>xdd</td>
+                <td>xddShrug</td>
+                <td>HAHdro</td>
+            </tr>
+            <tr>
+                <td>9/10</td>
+                <td>9.5/10</td>
+                <td>10/10</td>
+            </tr>
+        </table>
+
+        <!-- html的容器 div&span -->
+        <div style =" color:green ; font-size:30px">
+            <ol type="I" >
+                <li style = "color:chartreuse">Caedrel's Twitch Stream</li>
+                <li style = "background-color:aquamarine">Caedrel's youtube</li>
+                <li style = "border: 5px dashed black">Caedrel Clips youtube</li>
+            </ul>
+            <table width="400" >
+                <tr>
+                    <td>xdd</td>
+                    <td>xddShrug</td>
+                    <td>HAHdro</td>
+                </tr>
+                <tr>
+                    <td>9/10</td>
+                    <td>9.5/10</td>
+                    <td>10/10</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 標籤的顯示有兩種方式，一種是顯示多少就佔多少空間，一種是每顯示一次就換行
+            <span>不會換行，<div>會換行-->
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <hr/>
+        <p>xdd ddx</p>
+        <p>ddx xdd</p>
+
+        <span>span1</span>
+        <span>span2</span>
+        <hr/>
+        <div>div1</div>
+        <div>div2</div>
+        
+        <!-- html輸入標籤 <input>後面加type辨別輸入的內容，例如text,password,date,range,file,checkbox
+            加上<placeholder>可以在使用者未輸入前顯示預設文字，<label for="">可以在輸入左邊加上標題>
+            <textarea>標籤中間的是預設文字-->
+        <input type="text" placeholder="account"/>
+        <br/>
+        <input type="password" placeholder="password"/>
+        <br/>
+        <button>LOCKIN</button>
+        <br/>
+        <input type="date"/>
+        <br/>
+        <input type="range"/>
+        <br/>
+        <input type="file"/>
+        <br/>
+        <input type="checkbox"/>
+        <br/>
+        <textarea>xdd textarea</textarea>
+
+        <!-- css屬性，styl=""中間可以加入很多屬性，內層屬性會覆蓋外層屬性 -->
+        <!-- 邊框有三個屬性，幾px，線條實虛，顏色，也可改變高寬，寬高不加上width則會根據視窗大小改變-->
+        <!-- paddings、margin可加上-top、right、bottom、left，若要每個值都不同就寫4個，依序為上右下左，margin也可寫負數-->
+        <div style="color: red;font-size:20px;">
+            <h1 style="color:blue;background-color: fuchsia;" >css tutorial xdd</h1>
+            <p style="background-color:burlywood;border:5px solid black; max-width:200px; height:200px;">
+                this is a paragraph xdd</p>
+        </div>
+        <div Style="padding:20px 30px 40px 50px; margin-top:-20px; background-color: lightblue; border:1px solid black">xdd div</div>
+        <br/>
+
+        <!-- float&display -->
+        <!-- float會讓物件浮起來，讓下方物件X軸往上，卡到Y軸Z軸重疊，在同一水平線上並顯示，可用在圖片、列表等等 -->
+        <img src="xddICANT.png" style="float:left"/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis commodi minus, obcaecati deserunt explicabo delectus quo a. Ipsam soluta odio suscipit aut! Nam tenetur, modi consequatur corrupti assumenda atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis commodi minus, obcaecati deserunt explicabo delectus quo a. Ipsam soluta odio suscipit aut! Nam tenetur, modi consequatur corrupti assumenda atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis commodi minus, obcaecati deserunt explicabo delectus quo a. Ipsam soluta odio suscipit aut! Nam tenetur, modi consequatur corrupti assumenda atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis commodi minus, obcaecati deserunt explicabo delectus quo a. Ipsam soluta odio suscipit aut! Nam tenetur, modi consequatur corrupti assumenda atque?</p>
+        
+        <!-- block:長度固定是一整行，如<p>段落標籤<div>容器標籤， inline:有多少東西長度就是多少，不會自動換行，如<span>標籤 -->
+        <p>HAH</p>
+        <p>HAHdro</p>
+        <p style="display: inline;">HAH</p>
+        <p style="display: inline;">HAHdro</p>
+        <span style="display: block;">span1</span>
+        <span style="display: block;">span2,</span>
+        <br/>
+
+        <!-- position:relative不會讓下方東西上移，例如position:relative;left:30px就是讓物體距離左邊30px，且會蓋過沒設定relative的東西 -->
+        <!-- position:fixed則會讓物件固定顯示在畫面某位置，跟float一樣上浮，並讓下方東西往上移 -->
+        <div style="position:relative;left:30px;width:80px;height:80px;background-color: blue;"></div> 
+        <div style="width:120px;height:120px;background-color: red;"></div> 
+        <br/>
+        
+        <!-- position:absolute，就像fixed一樣會獨立一層漂浮，但若外層也有定位則移動範圍不會超過有定位的最裡面的外層，會有父子關係，不會像fixed一樣永遠固定在畫面某位置 -->
+        <div style="position:relative; padding:30px; border:5px solid red">
+            <div style="position:relative; padding:30px; border:5px solid red">
+                <div style=" position:absolute;top:0px; right:0px; width:40px; height:40px ; background-color: blue;">
+                </div>
+            </div>
+        </div>
+
+        <!-- opacity s& boreder-adius -->
+        <!-- opacity設定透明度，border-radius讓border的角變的半徑多少px的圓弧，設定順序為左上右上右下左下 -->
+        <p style="position:relative; top:50px; left:20px">xdd</p>
+        <div style="opacity: 0.5; border-radius:10px 20px 30px 40px; width:80px; height:80px; background-color: greenyellow;  "></div>
+
+    </body>
+</html>
+
+<!-- display flex-direction justify-content align-items position-->

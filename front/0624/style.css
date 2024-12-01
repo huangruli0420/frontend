@@ -1,0 +1,31 @@
+label{
+    color: blue;
+}
+
+label[for="abc"]{
+    color: red;
+}
+
+.p1{/* 優先級:style(html)>屬性>元素 */
+    color: aqua;
+}
+
+p{
+    color: blueviolet;
+}
+
+.boxSizing{
+    width:300px;
+    height:300px;
+
+
+}
+
+.duck{
+    width: 200px;
+    height: 200px;
+}
+
+img{
+    /*box-sizing: border-box;*/
+}

@@ -1,0 +1,108 @@
+/* P{
+    color:red;
+}
+h1{
+    color:blue;
+} */
+
+/* (*)米字號代表套用在所的HTML標籤上 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* 下面這個CSS代表找到ul標籤裡所有的li標籤並改變屬性 */
+ul li{
+    background-color: cornflowerblue;
+}
+
+/* 套用在屬性上面可以用中括號，例如[type] */
+[type]{
+    background-color: darksalmon;
+}
+[type]:hover{
+    background-color: greenyellow;
+}
+
+h2, .rat{
+    color:green;
+}
+
+.HAH{
+    color:goldenrod;
+}
+
+.background-grey, #HR1, #HR2{
+    background-color: grey;
+}
+
+
+/* 若將這裡的h1改成#css-h1則hover不會生效，應該是id的屬性會蓋過標籤或class */
+h1{ 
+    color:gold;
+    background-color: sandybrown;
+}
+
+/* :hover代表當滑鼠移動到物件上方時會改變成怎樣的屬性 */
+h1:hover{
+    background-color: aquamarine;
+}
+
+
+/* flex */
+.container{
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    border: 1px solid red;
+    justify-content: center;
+    /* align-items: center; */
+    align-content:center;
+}
+
+
+.container div{
+    border: 1px solid black;
+    padding: 10px;
+    width: 100px;
+}
+
+.box1{
+
+}
+
+.box2{
+
+}
+
+.box3{
+
+}
+
+/* animation */
+@keyframes change-color{
+    /* from{background-color: cornflowerblue;}
+    to{background-color: red;} */
+    0%{background-color: blue ; left: 25px ;}
+    20%{background-color: cyan ; left: 50px ;}
+    40%{background-color:green ; top: 25px ; left: 50px ;}
+    60%{background-color:yellow ; top: 50px ; left: 50px ;}
+    80%{background-color:red ; top: 50px ; left: 25px ;}
+    100%{background-color:purple ; top: 25px ;}
+}
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+}
+
+.box-animation:hover {
+    animation-name: change-color;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+

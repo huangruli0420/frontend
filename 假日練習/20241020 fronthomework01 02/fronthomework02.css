@@ -1,0 +1,57 @@
+/* 確保元素的寬度和高度包括padding和border，這樣可以避免在增加padding或border時，元素尺寸出現意外的增長。 */
+*{
+    box-sizing: border-box;
+}
+
+/* 讓body直接跟瀏覽器視窗對齊 */
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    /* 使用 width: 100%; 或 max-width: 1260px; 可以讓 header 和 footer 更加響應式，適應不同螢幕尺寸，避免在小螢幕上出現滾動條的情況 */
+    /* 用postion:fixed最好加上top:0 ，用z-index:1000確保浮在其他內容之上*/
+    width: 100%;
+    /* max-width:1260px; */
+    height:140px;
+    background-color:  #8ac0ff;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+
+.main-body{
+    width:1260px;
+    height:1920px;
+    margin-top:140px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-body .top-container{
+    width:1260px;
+    height:550px;
+    background-color: white;
+    border: 10px double black;
+}
+
+.main-body .bot-container{
+    width:1186px;
+    height:1029px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer{
+    width:1260px;
+    height:140px;
+    background-color:  #8ac0ff;
+}

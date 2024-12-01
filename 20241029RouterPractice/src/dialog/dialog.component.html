@@ -1,0 +1,14 @@
+<!-- dialog標題 -->
+<h2 mat-dialog-title>標題</h2>
+<!-- dialog內容 -->
+<mat-dialog-content>
+  <p>name: {{data.name}}</p>
+  <p>age:{{data.age}}</p>
+  <p>訊息</p>
+  <input [(ngModel)]="dialogInputData">
+</mat-dialog-content>
+<!-- dialog按鈕 -->
+<mat-dialog-actions>
+  <button>取消</button>
+  <button (click)="goBack()">確定</button>
+</mat-dialog-actions>

@@ -1,0 +1,146 @@
+@media screen and (max-width: 992px) {
+  body .botArea .imgRow {
+    display: block;
+  }
+  body .botArea .imgRow .imgCell {
+    width: 100%;
+    height: 66.72vw;
+  }
+  body footer .contact {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    padding-top: 5%;
+  }
+  body footer .contact .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body footer .contact .icons i {
+    margin: 4%;
+  }
+  body footer .links {
+    display: none;
+  }
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navCus {
+  z-index: 2;
+  width: 100%;
+  padding: 0 3%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.botArea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.botArea .imgRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.botArea .imgRow .imgCell {
+  width: 50%;
+  height: 33.36vw;
+}
+.botArea .imgRow .imgCell a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.botArea .imgRow .imgCell .imgAll {
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.5);
+  transition: 0.1s;
+}
+.botArea .imgRow .imgCell .imgAll:hover {
+  filter: brightness(0.8);
+}
+.botArea .imgRow .imgCell .imgHei {
+  height: 100%;
+}
+.botArea .imgRow .imgCell .imgWid {
+  width: 100%;
+}
+.botArea .imgRow .imgCell .imgText {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.botArea .imgRow .imgCell .imgText span {
+  font-size: 50px;
+}
+.botArea .imgRow .imgCell .imgText i {
+  font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+footer .contact {
+  width: 50%;
+  position: absolute;
+  bottom: 25%;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .contact p {
+  color: white;
+  font-weight: bold;
+}
+footer .contact .icons {
+  width: 100%;
+  background-color: black;
+}
+footer .contact .icons i {
+  color: white;
+  margin-right: 8%;
+}
+footer .links {
+  width: 125px;
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+}
+footer .links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer .links ul li {
+  margin: 4%;
+}
+footer .links ul li a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

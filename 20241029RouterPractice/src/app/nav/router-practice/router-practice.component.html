@@ -1,0 +1,20 @@
+<h1>路由練習</h1>
+<h2>使用HTML routerLink做換頁觸發</h2>
+
+<nav>
+  <ul>
+    <li><a routerLink="/nav/routerPractice/first" routerLinkActive="active" >First Component</a></li>
+    <li><a routerLink="/nav/routerPractice/second" routerLinkActive="active" >Second Component</a></li>
+  </ul>
+</nav>
+<br>
+
+<h2>按鈕需使用TS做觸發換頁</h2>
+<!-- <button routerLink="/" >返回起始頁</button> -->
+<button  routerLink="/nav/routerPractice">返回起始頁</button>
+<!-- <button (click)="navigateToHome()" >返回起始頁</button> -->
+<button (click)="navigateToFirst()" routerLinkActive="active">First Component</button>
+<button (click)="navigateToSecond()" routerLinkActive="active">Second Component</button>
+<!-- 導航頁的頁面內容會放在這裡 -->
+<router-outlet></router-outlet>
+

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  width: 80px;
+  color: #ed6e6e;
+  border: 1px solid rgb(169, 28, 28);
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+h1:hover {
+  scale: 1.05;
+}
+h1:active {
+  scale: 0.95;
+  /*background-color: $mainColor;
+  color: white;*/
+}
+
+.big {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big .flexBox1 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(221, 25, 25);
+}
+.big .flexBox2 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(34, 195, 69);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+//矩陣按鈕
+.arrayButtonBigDiv{
+  width: 1000px;
+  display: flex;
+}
+.arrayButtonDiv{
+  margin: 1px solid black;
+  margin-left: 10px;
+}
+.arrayButton{
+    width: 150px;
+    border-radius: 10px;
+}
+
+//矩陣練習2
+.playerStatus{
+  width:400px;
+  height:200px;
+  border: 5px solid black;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.playerStatus .playerName{
+    align-self: center;
+}
+
+.props{
+  margin-left: 50px;
+}
+

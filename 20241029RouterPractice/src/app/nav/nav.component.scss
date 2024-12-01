@@ -1,0 +1,25 @@
+a{
+  color: #66c2ff;
+}
+
+.nav{
+    width:100vw;
+    height: 50px;
+    display: flex;
+    position: relative;
+    top:100px;
+}
+.navContent{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.active{
+  color: red;
+}
+
+.navRouterOutlet{
+  width:100vw;
+  top: 150px;
+  position: relative;
+}

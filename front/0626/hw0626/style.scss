@@ -1,0 +1,179 @@
+$mainColor:#f8e4cc;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    background-color: #a8947c;
+    background-image: url(./R.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15dvh;
+    width: 100dvw;
+    // height: 100dvh;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    // position: fixed;//放大後會不能往下滾
+    // top: 0;
+    // left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mainArea{
+    width: 600px;
+    height: 500px;
+    // margin: 0 auto;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid $mainColor;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(44, 44, 44);
+
+    h1{
+        // margin: 0 auto;
+        // color: #a8947c;
+        color: $mainColor;
+        // background-color: #b8c4ac;
+        font-size: 50px;
+        margin-bottom: 5%;
+        position: relative;
+        // &::after{
+        //     content: "";
+        //     width: 100%;
+        //     height: 1px;
+        //     background-color: #b8c4ac;
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 0;
+        // }
+    }
+    
+    .inputEmail{
+        width: 50%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 5%;
+        input{
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            color: $mainColor;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: $mainColor;
+            }
+        }
+        .fa-envelope{
+            color: $mainColor;
+            font-size: 20px;
+        }
+        &::after{//border-bottom可以只留下方邊界
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $mainColor;
+            position: absolute;
+            bottom: 5%;
+        }
+    }
+    .inputPassword{
+        width: 50%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 8%;
+        input{
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            color: $mainColor;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: $mainColor;
+            }
+        }
+        .fa-lock{
+            color: $mainColor;
+            font-size: 20px;
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $mainColor;
+            position: absolute;
+            bottom: 5%;
+        }
+    }
+    .subArea{
+        display: flex;
+        width: 50%;
+        position: relative;
+        .checkBox{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            input{//input[type="checkbox"]{}可以只改checkbox
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+            label{
+                color: $mainColor;
+                cursor: pointer;
+            }
+        }
+        .joinUs{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            .fa-wheelchair-move{
+                color: $mainColor;
+            }
+            a{
+                color: $mainColor;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        
+        
+    }
+    button{
+        border: none;
+        background-color: $mainColor;
+        border-radius: 5px;
+        width: 15%;
+        height: 8%;
+        color: #533834;
+        margin-top: 10%;
+        cursor: pointer;
+        transition: 0.1s;
+        &:active{
+            scale: 0.95;
+        }
+    }
+}

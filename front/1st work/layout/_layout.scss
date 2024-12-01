@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+@media screen and (max-width: 992px) {
+    body header{
+        padding: 0;
+        .mainIcon{
+            margin-left: 3%;
+        }
+        .headerText{
+            width: 100dvw;
+            height: 0dvh;
+            position: fixed;
+            top: 10dvh;
+            flex-direction: column;
+            background-color: rgb(48, 193, 193, 0.7);
+            overflow: hidden;
+            transition: 0.3s;
+            label{
+                margin: 0;
+            }
+        }
+        .collapseButton{
+            display: initial;
+        }
+        input[type="checkbox"]{
+            display: initial;
+            &:checked ~ .headerText{
+                height: 90dvh;
+            }
+        }
+    }
+
+    body .mainArea .bgVideoDiv{
+        background-image: url(../bgRWD.jpg);
+        background-position: center;
+        background-size: cover;
+        .bgVideo{
+            display: none;
+        }
+    } 
+
+    body .mainArea .mainNEWS .newsContent{
+        display: block;
+        .newsEvent{
+            margin: 0;
+            height: 50dvh;
+            display: initial;
+            img{
+                height: initial;
+                width: 100dvw;
+                &:hover{
+                    transform:scale(1);
+                }
+            }
+            .eventText{
+                margin-right: 3%;
+                .date{
+                    font-size: 0.8rem;
+                }
+                h1{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .newsBottom{
+            margin: 0;
+            padding: 0 3%;
+            padding-top: 3%;
+            height: 40dvh;
+            .newsList{
+                height: 35dvh;
+                .newsDiv .date{
+                    font-size: 0.6rem;
+                }
+                .newsDiv a p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    body .mainArea .mainCHARA .charaIconList{
+        width: 100dvw;
+        height: 10dvh;
+        margin-left: 0;
+        margin-top: 5%;
+        padding: 1dvh 5dvw;
+        overflow-y: initial;
+        display: flex;
+        justify-content: space-evenly;
+        .charaIcon{
+            width: 8dvh;
+            height: 8dvh;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+    }
+    body .mainArea .mainCHARA .chara{
+        width: 100dvw;
+        left: 0;
+        .charaImg{
+            position: absolute;
+            top: 8dvh;
+            left: 20dvw;
+        }
+        .charaText{
+            width: 80dvw;
+            height: 50%;
+            margin-right: 10dvw;
+            margin-left: 10dvw;
+            margin-bottom: 3dvh;
+            opacity: 0.9;
+            border-radius: 20px;
+            .schoolIcon{
+                display: none;
+            }
+            .namae{
+                margin: 0;
+            }
+            .nameEn, .profile{
+                margin: 0;
+            }
+            .seiyuu{
+                margin-bottom: 3%;
+            }
+            .profile{
+                font-size: 15px;
+                border-bottom: 2px solid#602cff;
+                padding: 1%;
+            }
+        }
+    }
+
+    body .mainArea .mainSTORY{
+        .topText{
+            width: 50%;
+        }
+        .botText{
+            width: 90%;
+        }
+        .vol1{
+            .vol1Img{
+                justify-content: end;
+                img{
+                    width: initial;
+                    object-fit: initial;
+                    height: 100%;
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    min-width: 100%;
+                }
+            }
+        }
+        .vol2{
+            .vol2Img{
+                justify-content: end;
+                img{
+                    width: initial;
+                    height: 100%;
+                    margin: 0;
+                    min-width: 100%;
+                }
+            }
+            .botText{
+                h1{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .vol3{
+            .vol3Img{
+                justify-content: end;
+                img{
+                    width: initial;
+                    height: 100%;
+                    margin: 0;
+                    min-width: 100%;
+                }
+            }
+        }
+        .vol4{
+            .vol4Img{
+                justify-content: end;
+                img{
+                    width: initial;
+                    height: 100%;
+                    margin: 0;
+                    min-width: 100%;
+                }
+            }
+        }
+        .volfinal{
+            .volfImg{
+                justify-content: end;
+                img{
+                    width: initial;
+                    height: 100%;
+                    margin: 0;
+                    min-width: 100%;
+                }
+            }
+            .botText{
+                h1{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .vol5{
+            .vol5Img{
+                justify-content: end;
+                img{
+                    width: initial;
+                    height: 100%;
+                    margin: 0;
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+
+    body .mainArea .mainMUSIC{
+        justify-content: space-evenly;
+        iframe{
+            width: 100dvw;
+            height: 56.25dvw;
+        }
+        .playerCon{
+            i{
+                font-size: 7dvh;
+            }
+            .musicTitle{
+                h1{
+                    font-size: 5dvh;
+                }
+                .rightSide{
+                    transform: translate(200dvw, -50%);
+                }
+                .leftSide{
+                    transform: translate(-200dvw, -50%);
+                }
+            }
+        }
+    }
+
+    body .mainArea .mainLINKS{
+        .linksTop{
+            height: 70dvh;
+            .linksLeft{
+                width: 100%;
+                height: 75%;
+                margin: 0;
+            }
+            .comics1{
+                top: auto;
+                bottom: 10%;
+                left: auto;
+                right: 60%;
+            }
+            .comics2{
+                left: 60%;
+            }
+        }
+        .footer{
+            height: 10dvh;
+            img{
+                scale: 0.3;
+            }
+        }
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+//header
+header{
+    z-index: 100;
+    background-color: rgb(48, 193, 193, 0.7);
+    min-width: 100%;
+    height: 10dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5% 2%;
+    .headerText{
+        width: 65%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        input[type="radio"]{
+            display: none;
+            &:checked + label{
+                font-size: 30px;
+                text-decoration: underline;
+            }
+        }
+        label{
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            font-family: "Lexend", sans-serif;
+            font-weight: bold;
+            margin-right: 8%;
+            transition: 0.3s;
+            &:hover{
+                font-size: 30px;
+            }
+        }
+    }
+    .collapseButton{
+        color: white;
+        font-size: 30px;
+        display: none;
+        position: absolute;
+        right: 5%;
+    }
+    input[type="checkbox"]{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.mainArea{
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    .bgVideoDiv{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        img{
+            position: absolute;
+            bottom: 3%;
+            right: 3%;
+            width: 30%;
+        }
+        .bgVideo{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    //主內容統一設定
+    .mainContent{
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        top: 10%;
+
+        right: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    //NEWS頁面
+    .mainNEWS{
+        background-image: url(../NEWSbg.png);
+        background-size: cover;
+        background-position: center;
+        .newsContent{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p{
+                margin: 0;
+                font-family: "Noto Sans JP", sans-serif;
+            }
+            p .date{
+                font-size: 10px;
+            }
+
+            //主NEWS
+            .newsEvent{
+                margin: 3% 8%;
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                img{
+                    height: 100%;
+                    transition: 0.3s ease;
+                    &:hover{
+                        //原點設為左上角 scale預設為中心
+                        transform: scale(1.5);
+                        transform-origin: left top;
+                    }
+                }
+                .eventText{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    margin-left: 3%;
+                    border-bottom: 3px solid #bba5ff;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-family: "Noto Sans JP", sans-serif;
+                    }
+                }
+            }
+
+            //news清單
+            .newsBottom{
+                margin: 0% 8%;
+                padding-bottom: 3%;
+                width: 100%;
+                height: 40%;
+                overflow-y: hidden;
+                .newsList{
+                    width: 100%;
+                    height: 28dvh;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    .newsDiv{
+                        border-bottom: 3px solid #bba5ff;
+                        margin-bottom: 1%;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    //CHARA頁面
+    .mainCHARA{
+        background-image: url(../CHARAbg.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        position: relative;
+        .charaIconList{
+            width: 20%;
+            height: 90dvh;
+            padding: 5dvh 5dvw;
+            margin-left: 5%;
+            background-color: rgba(255,255,255,0.5);
+            z-index: 1;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .charaIcon{
+                width: 10dvw;
+                height: 10dvw;
+                margin-bottom: 5dvh;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 0 5px rgb(176, 176, 176);
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .chara{
+            width: 70%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 25%;
+            opacity: 0;
+            transition: 0.3s;
+            .charaImg{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 100%;
+                }
+            }
+            .charaText{
+                width: 60%;
+                height: 70%;
+                margin-right: 5%;
+                margin-bottom: 3%;
+                padding: 3% 3%;
+                background-color: rgb(255, 255, 255);
+                opacity: 0.7;
+                box-shadow: 5px 5px 5px rgb(176, 176, 176);
+                border-radius: 30px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                .schoolIcon{
+                    position: absolute;
+                    top: 2%;
+                    right: 5%;
+                    transform: scale(0.3);
+                    transform-origin: top right;
+                }
+                .namae{
+                    font-weight: bold;
+                    font-family: "Noto Sans JP", sans-serif;
+                }
+                p{
+                    
+                    font-family: "Noto Sans JP", sans-serif;
+                }
+                .nameEn{
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 1.5%;
+                }
+                .seiyuu{
+                    font-size: 20px;
+                    margin-bottom: 10%;
+                }
+                .profile{
+                    font-size: 20px;
+                    border-bottom: 2px solid#602cff;
+                    padding: 1%;
+                }
+            }
+        }
+        .charaShow{
+            opacity: 1;
+        }
+    }
+
+    //STORY頁面
+    .mainSTORY{
+        background-color: transparent;
+        position: absolute;
+        .storyChild{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            transition: 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+        .topText{
+            width: 20%;
+            height: 10dvh;
+            position: absolute;
+            top: 90px;
+            left: -40px;
+            border-radius: 5px;
+            background-color: #774aff;
+            transform: skew(-45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.9;
+            h1{
+                transform: skew(45deg);
+                margin: 0;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                font-family: "Lexend", sans-serif;
+                letter-spacing: .08em;
+            }
+        }
+        .botText{
+            width: 50%;
+            height: 10dvh;
+            position: absolute;
+            bottom: 90px;
+            right: -40px;
+            border-radius: 5px;
+            background-color: #774aff;
+            transform: skew(-45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.9;
+            h1{
+                transform: skew(45deg);
+                margin: 0;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                font-family: "Noto Sans JP", sans-serif;
+                letter-spacing: .08em;
+            }
+        }
+        .vol1{
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(to bottom right, rgba(220, 208, 255, 0.9), rgba(255, 255, 255, 0.9));
+            .vol1Img{
+                width: 100%;
+                height: calc(90dvh - 120px);
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 10dvh;
+                }
+            }
+        }
+        .vol2{
+            position: absolute;
+            top: calc(100% - 30px);
+            background: linear-gradient(to bottom right, rgba(186, 163, 255, 0.9), rgba(255, 255, 255, 0.9));
+            .vol2Img{
+                width: 100%;
+                height: calc(90dvh - 150px);
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 15dvh;
+                }
+            }
+        }
+        .vol3{
+            position: absolute;
+            top: 100%;
+            background: linear-gradient(to bottom right, rgba(158, 126, 255, 0.9), rgba(255, 255, 255, 0.9));
+            .vol3Img{
+                width: 100%;
+                height: calc(90dvh - 180px);
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 20dvh;
+                }
+            }
+        }
+        .vol4{
+            position: absolute;
+            top: 100%;
+            background: linear-gradient(to bottom right, rgba(118, 72, 255, 0.9), rgba(255, 255, 255, 0.9));
+            .vol4Img{
+                width: 100%;
+                height: calc(90dvh - 210px);
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 5dvh;
+                }
+            }
+        }
+        .volfinal{
+            position: absolute;
+            top: 100%;
+            background: linear-gradient(to bottom right, rgba(96, 44, 255, 0.9), rgba(255, 255, 255, 0.9));
+            .volfImg{
+                width: 100%;
+                height: calc(90dvh - 240px);
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 20dvh;
+                }
+            }
+        }
+        .vol5{
+            position: absolute;
+            top: 100%;
+            background: linear-gradient(to bottom right, rgba(64, 0, 255, 0.9), rgba(255, 255, 255, 0.9));
+            .vol5Img{
+                width: 100%;
+                height: calc(90dvh - 240px);
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: 15dvh;
+                }
+            }
+        }
+    }
+
+    //MUSIC頁面
+    .mainMUSIC{
+        background-image: url(../musicbg.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        iframe{
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgb(0, 0, 0, 0.8);
+        }
+        .playerCon{
+            width: 100%;
+            height: 20dvh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+            i{
+                color: white;
+                font-size: 10dvh;
+                text-shadow: 0 0 20px rgb(0, 0, 0, 1);
+                cursor: pointer;
+            }
+            .buttonUnshown{
+                opacity: 0;
+                cursor: initial;
+            }
+            .musicTitle{
+                width: 60%;
+                height: 20dvh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0%);//配合上一行以元素中心為基準置中
+                h1{
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    text-shadow: 0 0 20px rgb(0, 0, 0, 0.8);
+                    font-size: 8dvh;
+                    font-family: "Lexend", sans-serif;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                .musicShow{
+                    transform: translate(-50%, -50%); //置中
+                    opacity: 1;
+                }
+                .rightSide{
+                    transform: translate(100dvw, -50%);
+                    opacity: 1;
+                }
+                .leftSide{
+                    transform: translate(-100dvw, -50%);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    //LINKS頁面
+    .mainLINKS{
+        .linksTop{
+            width: 80dvw;
+            height: 60dvh;
+            margin: 5dvh 10dvw;
+            backdrop-filter: blur(10px);
+            background-size: cover;
+            box-shadow: 0 0 10px rgb(176, 176, 176);
+            position: absolute;
+            .linksLeft{
+                width: 50%;
+                height: 100%;
+                margin-left: 8%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .linkIcon{
+                    width: 100%;
+                    height: 20%;
+                    margin: 0 10%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    i{
+                        font-size: 3rem;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                }
+                .FC{
+                    margin: 0 10%;
+                    height: 20%;
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 3rem;
+                    font-family: "Lexend", sans-serif;
+                    font-weight: bold;
+                }
+            }
+            .comics1{
+                width: 30%;
+                position: absolute;
+                top: 10%;
+                left: 65%;
+            }
+            .comics2{
+                width: 30%;
+                position: absolute;
+                bottom: 10%;
+                left: 65%;
+            }
+        }
+        .footer{
+            width: 100%;
+            height: 20dvh;
+            background-color: rgba(255,255,255,0.85);
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                scale: 0.5;
+            }
+        }
+    }
+}

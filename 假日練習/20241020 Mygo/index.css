@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding:0;
+}
+
+.background{
+    background-color:#0b2636;
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+}
+
+.menu{
+    height:160px;
+    width:80px;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color:#38b ;
+    z-index:5;
+}
+
+.menu:hover{
+    background: #287aac;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.content{
+    background-color: #c8d6db;
+    position: relative;
+    height: 50%;
+
+}
+
+.footer{
+    position: relative;
+    top:100%;
+
+}

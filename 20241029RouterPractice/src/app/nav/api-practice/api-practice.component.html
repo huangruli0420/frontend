@@ -1,0 +1,27 @@
+<button class="logData" (click)="getDogData()" >Load Dog Data</button>
+<br>
+<div class="dogDivWrapper">
+@for(dog of dogs; track $index){
+  <div class="dogDiv">
+    <img src="{{dog.image.url}}" alt="{{dog.name}}" width="300" height="auto">
+    <div class="dogInfo">
+      <h1>{{dog.name}}</h1>
+      <h3>Bred For: {{dog.bred_for}}</h3>
+      <h3>Breed Group: {{dog.breed_group}}</h3>
+      <h3>Life Span: {{dog.life_span}}</h3>
+      <h3>Origin: {{dog.origin}}</h3>
+      <h3>Temperament: {{dog.temperament}}</h3>
+      <h3>Weight: {{dog.weight.imperial}} kg (Metric), {{dog.weight.metric}} lbs (Imperial)</h3>
+      <h3>Height: {{dog.height.imperial}} cm (Metric), {{dog.height.metric}} in (Imperial)</h3>
+    </div>
+  </div>
+}
+</div>
+
+<!-- spinner -->
+<!-- | async用來訂閱跟等待loading變更 -->
+<!-- 一開始有預設值false所以一開始不顯示 -->
+@if(loading$ | async){
+  <div class="overlay"></div>
+  <mat-spinner></mat-spinner>
+  }

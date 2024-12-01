@@ -1,0 +1,73 @@
+testTitle{
+  background-color: red;
+  }
+  .testContent{
+  background-color: blue;
+  color: white;
+  }
+
+  // 等級計算機CSS
+  .levelCalculator{
+    width: 500px;
+    height: 500px;
+    border: 5px solid #80d7ff  ;
+    background-color:white;
+    padding:25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .calTitle{
+    align-self: center;
+    color:#00ace6;
+  }
+
+  .levelUpDown{
+    width: 500px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  .status{
+    align-self:flex-start;
+    color: #0052cc  ;
+  }
+
+  .inputLevelDiv{
+    width:450px;
+    display: flex;
+  }
+
+  .button1{
+    width: 200px;
+    color: #4d4dff  ;
+    background-color:  #e6e6ff ;
+    border:5px outset ;
+  }
+
+  .levelChange{
+      width: 400px;
+      color: #4d4dff  ;
+      background-color: #e6e6ff ;
+      border:5px outset ;
+    }
+
+  .levelReset{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color: #cc66ff;
+    background-color: #f7e6ff ;
+    border:5px outset ;
+  }
+
+  .statusDiv{
+    width:450px;
+    display: flex;
+  }
+  .levelCalVariable{
+    color: #ff66b3  ;
+  }

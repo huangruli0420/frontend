@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTR0628</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- BSNavBar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark position-fixed">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#">
+                <img src="./GTR-LOGO.svg" alt="NISSAN">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-light" href="#">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-light" href="#">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-light" href="#">ABOUT US</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="SEARCH" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- navbar -->
+    <header>
+        <div class="headerLeft">
+            <a href="">
+                <img src="./GTR-LOGO.svg" alt="GTR">
+            </a>
+            <a href="" class="headerItems">PRODUCTS</a>
+            <a href="" class="headerItems">EXPERIENCE</a>
+            <a href="" class="headerItems">ABOUT US</a>
+        </div>
+        <input type="text" class="search" placeholder="SEARCH">
+        <i class="fa-solid fa-bars collapseButton"></i>
+        <input type="checkbox">
+        <div class="collapseContent">
+            <a href="" class="collapseItems">SEARCH</a>
+            <a href="" class="collapseItems">PRODUCTS</a>
+            <a href="" class="collapseItems">EXPERIENCE</a>
+            <a href="" class="collapseItems">ABOUT US</a>
+        </div>        
+    </header>
+    <!-- 輪播 -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./GTR-01.jpg" class="d-block w-100" alt="GTR">
+            </div>
+            <div class="carousel-item">
+                <img src="./GTR-02.jpg" class="d-block w-100" alt="GTR">
+            </div>
+            <div class="carousel-item">
+                <img src="./GTR-03.jpg" class="d-block w-100" alt="GTR">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- 圖片區 -->
+    <div class="botArea">
+        <div class="imgRow">
+            <div class="imgCell">
+                <a href="">
+                    <img src="./GTR-04.jpg" alt="GTR" class="imgAll imgHei">
+                    <div class="imgText">
+                        <span>OLD SCHOOL</span>
+                        <i class="fa-solid fa-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="imgCell">
+                <a href="">
+                    <img src="./GTR-07.jpg" alt="GTR" class="imgAll imgHei">
+                    <div class="imgText">
+                        <span>OLD SCHOOL</span>
+                        <i class="fa-solid fa-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="imgRow">
+            <div class="imgCell">
+                <a href="">
+                    <img src="./GTR-05.jpg" alt="GTR" class="imgAll imgWid">
+                    <div class="imgText">
+                        <span>OLD SCHOOL</span>
+                        <i class="fa-solid fa-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="imgCell">
+                <a href="">
+                    <img src="./GTR-06.jpg" alt="GTR" class="imgAll imgWid">
+                    <div class="imgText">
+                        <span>OLD SCHOOL</span>
+                        <i class="fa-solid fa-circle-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="contact">
+            <p>CONTACT US</p>
+            <div class="icons">
+                <a href="">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="">Topic</a></li>
+                <li><a href="">Topic</a></li>
+                <li><a href="">Page</a></li>
+                <li><a href="">Page</a></li>
+                <li><a href="">Page</a></li>
+                <li><a href="">Page</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</html>

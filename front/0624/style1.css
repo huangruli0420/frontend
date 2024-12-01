@@ -1,0 +1,57 @@
+/**{
+    box-sizing: border-box;
+    border: 1px solid black;
+}*//* body跟head也會被影響 */
+
+/* margin給兩個數字 第一個是上下 第二個是左右 */
+
+.img_container{
+    font-size: 0;
+}
+
+.input_button{
+    font-size: 0;
+}
+
+.hw1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 24px;
+    margin-bottom: 36px;
+}
+
+.hw2{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 36px;
+}
+
+.hw_text{
+    box-sizing: border-box;
+    width: 524px;
+    height: 100px;
+    margin-bottom: 36px;
+    border: solid;
+    border-width: 2px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hw_input{
+    box-sizing: border-box;
+    width: 386px;
+    height: 20px;
+    margin-right: 18px;
+}
+
+.hw_button{
+    /*box-sizing: border-box;*/
+    width: 120px;
+    height: 20px;
+    /*border: 0px;*/
+    padding: 0px;
+}

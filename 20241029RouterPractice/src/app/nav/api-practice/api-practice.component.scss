@@ -1,0 +1,51 @@
+.logData{
+margin-left: 100px;
+color:#ff8000 ;
+background-color: #fff3e6;
+border-radius: 5px;
+border: 3px solid #b33c00;
+}
+
+.dogDivWrapper{
+  color: #662200;
+  background-color:#ffffe6 ;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+}
+.dogDivWrapper .dogDiv{
+  background-color:#ffeecc ;
+  width: 500px;
+  height: auto;
+  margin: 25px;
+  padding: 25px;
+  border: 3px solid  #662200;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #662200;
+}
+
+
+// .dogDivWrapper .dogInfo{
+// }
+
+// spinner
+.overlay{
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 4;
+  backdrop-filter: blur(5px);
+}
+
+mat-spinner{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}

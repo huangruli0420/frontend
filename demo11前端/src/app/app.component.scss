@@ -1,0 +1,171 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Arial", sans-serif;
+  /* 使用Arial字體，並備用sans-serif */
+}
+
+.img1 {
+      height:200px;
+      width:200px;
+      margin-right:24px;
+      margin-bottom:36px;
+}
+
+.img2 {
+  height:200px;
+  width:300px;
+  margin-bottom:36px;
+}
+
+.boxModel{
+      width:524px;
+      height:100px;
+      background-color: red;
+      margin-bottom: 36px;
+}
+
+.input{
+      width:386px;
+      height:20px;
+      margin-right:18px;
+}
+
+.button{
+      width:120px;
+      height:20px;
+}
+
+
+
+.boxdiv{
+  margin:10px;
+}
+
+.boxdiv div{
+  width:100px;
+}
+
+.box1{
+background-color:blue ;
+height:90px;
+}
+
+.box2{
+  background-color:greenyellow ;
+  height:30px;
+}
+
+.box3{
+  background-color:red ;
+  height:30px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.box4{
+  background-color:green ;
+  height:30px;
+}
+
+.box5{
+  background-color:yellow ;
+  height:90px;
+}
+
+.xdd{
+  width: 450px;
+  height:2000px;
+  border:1px solid black ;
+  background-image:url('/xdd.png');
+  position:relative;
+}
+
+.xddshrug{
+  width:100%;
+  height:130px;
+  border:1px solid black ;
+  background-image:url('/xddshrug.png');
+  position: fixed;
+  top:0%;
+}
+
+.angular{
+  color: red;
+}
+
+.testTitle{
+background-color: red;
+}
+.testContent{
+background-color: blue;
+color: white;
+}
+
+// 等級計算機CSS
+.levelCalculator{
+  width: 500px;
+  height: 500px;
+  border: 5px solid #80d7ff  ;
+  background-color:white;
+  padding:25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+}
+.calTitle{
+  align-self: center;
+  color:#00ace6;
+}
+
+.levelUpDown{
+  width: 500px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.status{
+  align-self:flex-start;
+  color: #0052cc  ;
+}
+
+.inputLevelDiv{
+  width:450px;
+  display: flex;
+}
+
+.button1{
+  width: 200px;
+  color: #4d4dff  ;
+  background-color:  #e6e6ff ;
+  border:5px outset ;
+}
+
+.levelChange{
+    width: 400px;
+    color: #4d4dff  ;
+    background-color: #e6e6ff ;
+    border:5px outset ;
+  }
+
+.levelReset{
+  position: absolute;
+  top:10px;
+  right:10px;
+  color: #cc66ff;
+  background-color: #f7e6ff ;
+  border:5px outset ;
+}
+
+.statusDiv{
+  width:450px;
+  display: flex;
+}
+.levelCalVariable{
+  color: #ff66b3  ;
+}
+

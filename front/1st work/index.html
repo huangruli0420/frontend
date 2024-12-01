@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブルーアーカイブ</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="">
+            <img src="./headerlogo.png" alt="" class="mainIcon">
+        </a>
+        <i class="fa-solid fa-bars collapseButton"></i>
+        <input type="checkbox" id="checkbox">
+        <div class="headerText">
+            <input type="radio" name="headerText" id="headerNEWS">
+            <label for="headerNEWS">NEWS</label>
+            <input type="radio" name="headerText" id="headerCHARA">
+            <label for="headerCHARA">CHARACTER</label>
+            <input type="radio" name="headerText" id="headerSTORY">
+            <label for="headerSTORY">STORY</label>
+            <input type="radio" name="headerText" id="headerMUSIC">
+            <label for="headerMUSIC">MUSIC</label>
+            <input type="radio" name="headerText" id="headerLINKS">
+            <label for="headerLINKS">LINKS</label>
+        </div>
+    </header>
+    <!-- 主內容 -->
+    <div class="mainArea">
+        <div class="bgVideoDiv">
+            <img src="./LogoJP.png" alt="">
+            <video class="bgVideo" autoplay="true" loop="true" preload="auto" src="./bg.555a8a72.mp4?t=timestamp"></video>
+        </div>
+        <div class="mainNEWS mainContent">
+            <div class="newsContent">
+                <div class="newsEvent">
+                    <img src="./NEWSevent.png" alt="">
+                    <div class="eventText">
+                        <p class="date">2024-06-25 13:55</p>
+                        <a href="https://bluearchive.jp/news/newsJump/461">
+                            <h1>【イベント】「Say-Bing!」紹介</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsBottom">
+                    <div class="newsList">
+                        <div class="newsDiv">
+                            <p class="date">2024-06-25 13:55</p>
+                            <a href="https://bluearchive.jp/news/newsJump/460">
+                                <p>メンテナンスのお知らせ（6/26 11:00 - 19:00予定）</p>
+                            </a>
+                        </div>
+                        <div class="newsDiv">
+                            <p class="date">2024-06-25 12:55</p>
+                            <a href="https://bluearchive.jp/news/newsJump/459">
+                                <p>ピックアップ募集紹介：★3「カンナ(水着)」、★3「フブキ(水着)」</p>
+                            </a>
+                        </div>
+                        <div class="newsDiv">
+                            <p class="date">2024-06-23 21:30</p>
+                            <a href="https://bluearchive.jp/news/newsJump/463">
+                                <p>公開生放送「夏のブルアカらいぶ！はっぴ～さま～しょ～たいむ！SP」実施決定！！</p>
+                            </a>
+                        </div>
+                        <div class="newsDiv">
+                            <p class="date">2024-06-17 17:55</p>
+                            <a href="https://bluearchive.jp/news/newsJump/462">
+                                <p>「ブルアカらいぶ！ざびぎにんぐおぶさまーSP！」配信決定！</p>
+                            </a>
+                        </div>
+                        <div class="newsDiv">
+                            <p class="date">2024-06-15 10:55</p>
+                            <a href="https://bluearchive.jp/news/newsJump/458">
+                                <p>ピックアップ募集紹介：★3「イズナ(水着)」、★3「チセ(水着)」、★3「ミモリ(水着)」</p>
+                            </a>
+                        </div>
+                        <div class="newsDiv">
+                            <p class="date">2024-06-04 10:55</p>
+                            <a href="https://bluearchive.jp/news/newsJump/457">
+                                <p>メンテナンスのお知らせ（6/5 11:00 - 17:00予定）</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainCHARA mainContent">
+            <div class="charaIconList">
+                <div class="charaIcon">
+                    <img src="./shirokoIcon.png" alt="" id="shirokoIcon">
+                </div>
+                <div class="charaIcon">
+                    <img src="./hinaIcon.png" alt="" id="hinaIcon">
+                </div>
+                <div class="charaIcon">
+                    <img src="./hifumiIcon.png" alt="" id="hifumiIcon">
+                </div>
+                <div class="charaIcon">
+                    <img src="./arisIcon.png" alt="" id="arisIcon">
+                </div>
+                <div class="charaIcon" style="margin-bottom: 0">
+                    <img src="./yukariIcon.png" alt="" id="yukariIcon">
+                </div>
+            </div>
+            <div class="chara charaShow" id="shiroko">
+                <div class="charaImg">
+                    <img src="./shiroko.png" alt="" style="margin-right: 20%">
+                </div>
+                <div class="charaText">
+                    <img class="schoolIcon" src="./abydos.png" alt="">
+                    <h1 class="namae">砂狼 シロコ</h1>
+                    <p class="nameEn">Shiroko Sunaookami</p>
+                    <p class="seiyuu">CV. 小倉唯</p>
+                    <p class="profile">アビドス高等学校 2年生</p>
+                    <p class="profile">対策委員会</p>
+                    <p class="profile">誕生日 5月16日</p>
+                    <p class="profile">趣味 ジョギング、体力トレーニング、ロードバイク</p>
+                </div>
+            </div>
+            <div class="chara " id="hina">
+                <div class="charaImg">
+                    <img src="./hina.png" alt="">
+                </div>
+                <div class="charaText">
+                    <img class="schoolIcon" src="./gehenna.png" alt="">
+                    <h1 class="namae">空崎 ヒナ</h1>
+                    <p class="nameEn">Hina Sorasaki</p>
+                    <p class="seiyuu">CV. 広橋涼</p>
+                    <p class="profile">ゲヘナ学園 3年生</p>
+                    <p class="profile">風紀委員会</p>
+                    <p class="profile">誕生日 2月19日</p>
+                    <p class="profile">趣味 睡眠、休憩</p>
+                </div>
+            </div>
+            <div class="chara " id="hifumi">
+                <div class="charaImg">
+                    <img src="./hifumi.png" alt="">
+                </div>
+                <div class="charaText">
+                    <img class="schoolIcon" src="./trinity.png" alt="">
+                    <h1 class="namae">阿慈谷 ヒフミ</h1>
+                    <p class="nameEn">Hifumi Ajitani</p>
+                    <p class="seiyuu">CV. 本渡楓</p>
+                    <p class="profile">トリニティ総合学園 2年生</p>
+                    <p class="profile">補習授業部</p>
+                    <p class="profile">誕生日 11月27日</p>
+                    <p class="profile">趣味 ペロログッズ集め、かわいいもの集め、ショッピング、相談に乗ること</p>
+                </div>
+            </div>
+            <div class="chara " id="aris">
+                <div class="charaImg">
+                    <img src="./aris.png" alt="" style="margin-right: 10%">
+                </div>
+                <div class="charaText">
+                    <img class="schoolIcon" src="./millennium.png" alt="">
+                    <h1 class="namae">天童 アリス</h1>
+                    <p class="nameEn">Aris Tendou</p>
+                    <p class="seiyuu">CV. 田中美海</p>
+                    <p class="profile">ミレニアムサイエンススクール 1年生</p>
+                    <p class="profile">ゲーム開発部</p>
+                    <p class="profile">誕生日 3月25日</p>
+                    <p class="profile">趣味 ゲーム（特にRPG）</p>
+                </div>
+            </div>
+            <div class="chara " id="yukari">
+                <div class="charaImg">
+                    <img src="./yukari.jpg" alt="">
+                </div>
+                <div class="charaText">
+                    <img class="schoolIcon" src="./hyakki.png" alt="">
+                    <h1 class="namae">勘解由小路 ユカリ</h1>
+                    <p class="nameEn">Yukari Kadenokouji</p>
+                    <p class="seiyuu">CV. 村上まなつ</p>
+                    <p class="profile">百鬼夜行連合学院 1年生</p>
+                    <p class="profile">百花繚乱紛争調停委員会</p>
+                    <p class="profile">誕生日 6月16日</p>
+                    <p class="profile">趣味 お祈り、駄菓子屋巡り</p>
+                </div>
+            </div>
+        </div>
+        <div class="mainSTORY mainContent">
+            <div class="vol1 storyChild">
+                <div class="vol1Img">
+                    <img src="./vol1.png" alt="">
+                </div>
+                <div class="topText">
+                    <h1>Vol.1</h1>
+                </div>
+                <div class="botText">
+                    <h1>対策委員会編</h1>
+                </div>
+            </div>
+            <div class="vol2 storyChild">
+                <div class="vol2Img">
+                    <img src="./vol2.png" alt="">
+                </div>
+                <div class="topText">
+                    <h1>Vol.2</h1>
+                </div>
+                <div class="botText" style="bottom: 120px">
+                    <h1>時計じかけの花のパヴァーヌ編</h1>
+                </div>
+            </div>
+            <div class="vol3 storyChild">
+                <div class="vol3Img">
+                    <img src="./vol3.jpeg" alt="">
+                </div>
+                <div class="topText">
+                    <h1>Vol.3</h1>
+                </div>
+                <div class="botText" style="bottom: 150px">
+                    <h1>エデン条約編</h1>
+                </div>
+            </div>
+            <div class="vol4 storyChild">
+                <div class="vol4Img">
+                    <img src="./vol4.jpeg" alt="">
+                </div>
+                <div class="topText">
+                    <h1>Vol.4</h1>
+                </div>
+                <div class="botText" style="bottom: 180px">
+                    <h1>カルバノグの兎編</h1>
+                </div>
+            </div>
+            <div class="volfinal storyChild">
+                <div class="volfImg">
+                    <img src="./volf.png" alt="">
+                </div>
+                <div class="topText">
+                    <h1>Final.</h1>
+                </div>
+                <div class="botText" style="bottom: 210px">
+                    <h1>あまねく奇跡の始発点編</h1>
+                </div>
+            </div>
+            <div class="vol5 storyChild">
+                <div class="vol5Img">
+                    <img src="./vol5.jpeg" alt="">
+                </div>
+                <div class="topText">
+                    <h1>Vol.5</h1>
+                </div>
+                <div class="botText" style="bottom: 210px">
+                    <h1>百花繚乱編</h1>
+                </div>
+            </div>
+        </div>
+        <div class="mainMUSIC mainContent">
+            <div class="player">
+                <iframe width="840" height="472.5" src="https://www.youtube.com/embed/0KFPtliRn_4?si=DWdyBvQJiaohnAIR&autoplay=1&loop=1&playlist=0KFPtliRn_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay="true"></iframe>
+            </div>
+            <div class="playerCon">
+                <i id="musicLeft" class="buttonUnshown fa-solid fa-play" style="transform: rotateY(180deg);"></i>
+                <div class="musicTitle">
+                    <h1 id="ConMod" class="musicShow">Constant Moderato</h1>
+                    <h1 id="Nic" class="rightSide">Nichirin</h1>
+                    <h1 id="DIS">DIVE INTO SUMMER</h1>
+                    <h1 id="TOMO">TOMODACHI SUMMER</h1>
+                    <h1 id="Usagi">Usagi Flap</h1>
+                    <h1 id="OpeDOTA">Operation ☆ DOTABATA</h1>
+                    <h1 id="Poly">Polyphonic</h1>
+                    <h1 id="Terror">Step of Terror</h1>
+                </div>
+                <i id="musicRight" class="fa-solid fa-play"></i>
+            </div>
+        </div>
+        <div class="mainLINKS mainContent">
+            <div class="linksTop">
+                <div class="linksLeft">
+                    <div class="linkIcon">
+                        <a href="https://bluearchive.jp/">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@BlueArchive_JP">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://x.com/Blue_ArchiveJP">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                    <a class="FC" href="https://bluearchive.jp/faq">FAQ</a>
+                    <a class="FC" href="https://bluearchive.jp/contact-1-hint">Contact</a>
+                </div>
+                <a href="https://bluearchive.jp/comics">
+                    <img class="comics1" src="./comics1.png" alt="">
+                </a>
+                <a href="https://bluearchive.jp/comics02">
+                    <img class="comics2" src="./comics2.png" alt="">
+                </a>
+            </div>
+            <div class="footer">
+                <img src="./footer.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f87484;
+}
+
+.guessDigit {
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #c86c84;
+}
+.guessDigit h1 {
+  color: white;
+  font-size: 3rem;
+}
+.guessDigit h2 {
+  color: white;
+}
+.guessDigit input {
+  border-radius: 10px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.guessDigit input:focus {
+  outline: none;
+}
+.guessDigit input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.guessDigit input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.guessDigit button {
+  background-color: rgb(112, 92, 124);
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+body .header {
+  background-color: #8ac0ff;
+  width: 1260px;
+  height: 141px;
+  margin-bottom: 120px;
+}
+body .topContainer {
+  width: 1260px;
+  height: 550px;
+  margin-bottom: 140px;
+  display: flex;
+  justify-content: center;
+}
+body .topContainer .mainText {
+  width: 382px;
+  height: 544px;
+  margin: 3px 0px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .topContainer .mainText .Title {
+  width: 283px;
+  height: 90.67px;
+  font-size: 70px;
+}
+body .topContainer .mainText .Article {
+  width: 283px;
+  height: 226.67px;
+  line-height: 20px;
+}
+body .topContainer .mainText .button {
+  width: 172px;
+  height: 50.11px;
+  font-size: larger;
+  background-color: #083c84;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgb(176, 176, 176);
+}
+body .topContainer .colorBox {
+  background-color: #6074a4;
+  width: 700px;
+  height: 550px;
+}
+body .botContainer {
+  width: 1186px;
+  height: 1029px;
+  margin: 0px 37px;
+}
+body .botContainer .botContainerText {
+  width: 1075px;
+  height: 64px;
+  margin: 50px 100px;
+  margin-right: 0px;
+  display: flex;
+}
+body .botContainer .botContainerText .botContainerTextTitle {
+  font-size: 45px;
+}
+body .botContainer .botContainerText .botContainerTextArticle {
+  width: 914px;
+  height: 64px;
+  margin-left: 50px;
+  font-size: 22px;
+}
+body .botContainer .botContainerImg {
+  width: 1066px;
+  height: 852px;
+  margin: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .botContainer .botContainerImg .imgRow {
+  width: 1066px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+body .botContainer .botContainerImg .imgRow .imgCell {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .botContainer .botContainerImg .imgRow .imgCell .subImg {
+  width: 200px;
+  height: 193.8px;
+  background-color: #6074a4;
+}
+body .botContainer .botContainerImg .imgRow .imgCell .imgTitle {
+  font-size: 45px;
+}
+body .footer {
+  background-color: #8ac0ff;
+  width: 1260px;
+  height: 141px;
+  margin-top: 140px;
+}/*# sourceMappingURL=style.css.map */

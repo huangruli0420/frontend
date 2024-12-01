@@ -1,0 +1,23 @@
+//
+.ifWrapperDiv{
+  display: flex;
+  flex-direction: column;
+}
+.ifButtonDiv{
+  display: flex;
+}
+.ifDataButton{
+  width: 5vw;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.ifDataDiv{
+  margin-left: 25px;
+  margin-bottom: 25px;
+  padding-left:25px;
+  width: 15vw;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}

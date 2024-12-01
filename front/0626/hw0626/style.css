@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  background-color: #a8947c;
+  background-image: url(./R.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15dvh;
+  width: 100dvw;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.mainArea {
+  width: 600px;
+  height: 500px;
+  position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #f8e4cc;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgb(44, 44, 44);
+}
+.mainArea h1 {
+  color: #f8e4cc;
+  font-size: 50px;
+  margin-bottom: 5%;
+  position: relative;
+}
+.mainArea .inputEmail {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5%;
+}
+.mainArea .inputEmail input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #f8e4cc;
+}
+.mainArea .inputEmail input:focus {
+  outline: none;
+}
+.mainArea .inputEmail input::-moz-placeholder {
+  color: #f8e4cc;
+}
+.mainArea .inputEmail input::placeholder {
+  color: #f8e4cc;
+}
+.mainArea .inputEmail .fa-envelope {
+  color: #f8e4cc;
+  font-size: 20px;
+}
+.mainArea .inputEmail::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f8e4cc;
+  position: absolute;
+  bottom: 5%;
+}
+.mainArea .inputPassword {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8%;
+}
+.mainArea .inputPassword input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #f8e4cc;
+}
+.mainArea .inputPassword input:focus {
+  outline: none;
+}
+.mainArea .inputPassword input::-moz-placeholder {
+  color: #f8e4cc;
+}
+.mainArea .inputPassword input::placeholder {
+  color: #f8e4cc;
+}
+.mainArea .inputPassword .fa-lock {
+  color: #f8e4cc;
+  font-size: 20px;
+}
+.mainArea .inputPassword::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f8e4cc;
+  position: absolute;
+  bottom: 5%;
+}
+.mainArea .subArea {
+  display: flex;
+  width: 50%;
+  position: relative;
+}
+.mainArea .subArea .checkBox {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+.mainArea .subArea .checkBox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.mainArea .subArea .checkBox label {
+  color: #f8e4cc;
+  cursor: pointer;
+}
+.mainArea .subArea .joinUs {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+.mainArea .subArea .joinUs .fa-wheelchair-move {
+  color: #f8e4cc;
+}
+.mainArea .subArea .joinUs a {
+  color: #f8e4cc;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mainArea button {
+  border: none;
+  background-color: #f8e4cc;
+  border-radius: 5px;
+  width: 15%;
+  height: 8%;
+  color: #533834;
+  margin-top: 10%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.mainArea button:active {
+  scale: 0.95;
+}/*# sourceMappingURL=style.css.map */

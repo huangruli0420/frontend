@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_sensei</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="mainArea">
+        <div class="title">
+            <h1>天氣預報</h1>
+        </div>
+        <div class="rightContent">
+            <select name="county" id="selectCity">
+                <option value="">請選擇城市</option>
+            </select>
+            <div class="weather">
+                <div class="weatherImg"></div>
+                <div class="weatherText">
+                    <div class="leftText">
+                        <p id="countyName"></p>
+                        <p id="Wx"></p>
+                    </div>
+                    <div class="rightText">
+                        <p id="temperature"></p>
+                        <p id="PoP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

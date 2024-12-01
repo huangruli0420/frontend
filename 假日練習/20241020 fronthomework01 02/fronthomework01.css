@@ -1,0 +1,92 @@
+/* 清除瀏覽器的預設樣式 */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 讓body直接跟瀏覽器視窗對齊 */
+body{
+    margin: 0px;
+}
+
+body .header {
+    width: 1260px;
+    height: 141px;
+    background-color: #8ac0ff;
+}
+
+
+
+/* body .main */
+body .main {
+    width: 1260px;
+    height: 1398px;
+    background-color: white;
+}
+
+/* body .main .mainTop  */
+body .main .mainTop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1260px;
+    height: 792px;
+}
+
+/* body .main .mainTop */
+body .main .mainTop .imgDiv{
+    width: 710px;
+    height: 684px;
+    background-color: #8ac0ff;
+}
+body .main .mainTop .textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 380px;
+    height: 792px;
+    padding:0px 50px 150px 50px;
+}
+body .main .mainTop .textDiv .textDivTitle{
+    text-align:left;
+    font-size: 70px;
+}
+body .main .mainTop .textDiv .textDivParagraph{
+    margin:-20px 0px 100px 0px;
+}
+body .main .mainTop .textDiv .textDivButton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 60px;
+    background-color: #044085;
+    color: white;
+}
+
+
+
+/* body .main .mainBot */
+body .main .mainBot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1260px;
+    height: 593px;
+}
+body .main .mainBot .imgDiv2{
+    width: 346px;
+    height: 401px;
+    background-color: #8ac0ff;
+}
+
+
+
+/* body .footer  */
+body .footer {
+    width: 1260px;
+    height: 141px;
+    background-color: #8ac0ff;
+}

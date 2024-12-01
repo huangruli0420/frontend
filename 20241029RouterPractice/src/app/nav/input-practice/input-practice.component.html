@@ -1,0 +1,64 @@
+<!-- service練習input，與用路由可以直接跳過很多層直接設定變數不同，若要直接用組件顯示並改變組件的變數則這一層要有原本的要賦值的變數 -->
+<app-service-practice [iconUserName]="userName" (changeUserName)="showNewName($event)"></app-service-practice>
+<br>
+<br>
+<form [formGroup]="form1" (ngSubmit)="showFormData()">
+  <div>
+    <input formControlName="account" placeholder="account">
+    <br>
+    <input formControlName="password" placeholder="password">
+    <br>
+    <input formControlName="email" placeholder="email">
+    <br>
+    <!-- [disabled]="!form1.valid"代表當form裡面所有必填的值還沒填完的時候按鈕就無法使用 -->
+    <button type="submit" [disabled]="!form1.valid">Log In</button>
+
+    <!-- 若要只打帳號按鈕就可以按的話[disabled]="!form1.get('account')?.valid" -->
+    <!-- button的另一種寫法 -->
+    <!-- <button (click)="showFormData()">Log In</button> -->
+  </div>
+</form>
+
+<!-- TABS 頁籤 -->
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+<!-- TABS 用FOR迴圈 -->
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  @for (link of links; track link) {
+    <a mat-tab-link
+      (click)="activeLink = link.tabName"
+      [active]="activeLink == link.tabName" [routerLink]="link.path">
+      {{link.tabName}}
+    </a>
+  }
+</nav>
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet></router-outlet>
+</mat-tab-nav-panel>
+
+<!-- 圖表，抓資料時要對應id的值-->
+<div class="piechart">
+<canvas  id="pieChart"></canvas>
+</div>
+
+<!-- SELECT，用ngModel綁定選擇內容 -->
+<select [(ngModel)]="selectData">
+  <!-- 若這個欄位要必填則可以不要給預設值，直接把其中一個選項當預設 -->
+  <!-- 當選擇了該選項ngModel的內容就會是該選項的值(value)，通常回傳給後端都是value(code) -->
+  <option value="">請選擇內容</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select>
+<button (click)=showSelectValue()>showSelectValue</button>
+
+<!-- ngClass ，CSS-->
+<!-- 若這個TS裡面的值不等於TRUE則CSS不會生效 -->
+<h3 [ngClass]="{'test':h3CssBoolean == true}">H3</h3>
+<h3 [ngClass]="getClassCss()">H3</h3>
+
+

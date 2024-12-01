@@ -1,0 +1,55 @@
+<!-- 變數、事件繫結 -->
+<br />
+<h1 class="testTitle">{{testTitle}}</h1>
+<h3 class="testContent">{{testContent}}</h3>
+<img [src]="testImage">
+<!-- <br>
+<img [src] ="" alt="xdd">
+<br/> -->
+<!-- 方法 -->
+<button (click)="showAlert()">還在GO</button>
+<br />
+<!-- (ngModel)可以讓使用者決定這個變數 -->
+{{inputData}}
+<input [(ngModel)]="inputData" />
+<button (click)="showInputData()">顯示inputData</button>
+<br />
+<br />
+
+<!-- 回家作業 -->
+<div class="levelCalculator">
+  <button class="levelReset" (click)=" levelReset() ">重置</button>
+  <h3 class="calTitle">角色等級計算器</h3>
+  <div class="statusDiv">
+    <p class="status">等級 :</p>
+    <p class="levelCalVariable">{{level}}</p>
+  </div>
+
+  <div class="levelUpDown">
+    <button class="levelUp, button1" (click)=" levelUp() ">升級</button>
+    <button class="levelDown, button1" (click)=" levelDown() ">降級</button>
+  </div>
+
+  <div class="statusDiv">
+    <p class="status">攻擊力 :</p>
+    <p class="levelCalVariable">{{attack}}</p>
+  </div>
+  <div class="statusDiv">
+    <p class="status">防禦力 :</p>
+    <p class="levelCalVariable">{{defense}}</p>
+  </div>
+
+  <p class="status">{{introduction}}</p>
+
+  <div class="inputLevelDiv">
+    <p class="status"> 自行輸入等級:</p>
+    <input [(ngModel)]=" input " />
+  </div>
+
+  <button class="levelChange" (click)=" levelChange() ">修改等級</button>
+</div>
+
+<br>
+<button (click)="printOut1()">印出1到50</button>
+<button (click)="printOut2()">印出1到50中除3會餘2的數字</button>
+<button (click)="printOut3()">修改小王的年齡為18</button>

@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Arial", sans-serif;
+  /* 使用Arial字體，並備用sans-serif */
+}
+
+.img1 {
+      height:200px;
+      width:200px;
+      margin-right:24px;
+      margin-bottom:36px;
+}
+
+.img2 {
+  height:200px;
+  width:300px;
+  margin-bottom:36px;
+}
+
+.boxModel{
+      width:524px;
+      height:100px;
+      background-color: red;
+      margin-bottom: 36px;
+}
+
+.input{
+      width:386px;
+      height:20px;
+      margin-right:18px;
+}
+
+.button{
+      width:120px;
+      height:20px;
+}
+
+
+
+.boxdiv{
+  margin:10px;
+}
+
+.boxdiv div{
+  width:100px;
+}
+
+.box1{
+background-color:blue ;
+height:90px;
+}
+
+.box2{
+  background-color:greenyellow ;
+  height:30px;
+}
+
+.box3{
+  background-color:red ;
+  height:30px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.box4{
+  background-color:green ;
+  height:30px;
+}
+
+.box5{
+  background-color:yellow ;
+  height:90px;
+}
+
+.xdd{
+  width: 450px;
+  height:2000px;
+  border:1px solid black ;
+  background-image:url('/xdd.png');
+  position:relative;
+}

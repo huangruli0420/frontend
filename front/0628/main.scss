@@ -1,0 +1,11 @@
+//bootstrap 所需功能
+@import "./node_modules/bootstrap/scss/functions";
+//自訂義套件
+@import "./stylesheet/helper/variables";
+
+@import "./stylesheet/helper/variables-dark";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+//自己所編輯的scss樣式
+@import "./stylesheet/layout/layout";
+

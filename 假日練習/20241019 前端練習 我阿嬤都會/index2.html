@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- meta標籤 -->
+        <meta charset="UTF-8"></meta>
+        <!-- 讓搜尋引擎了解網站，列如搜尋結果的描述欄、作者、搜尋關鍵字、視口(根據裝置調整寬度，初始縮放比100%)-->
+        <meta name = "description" content="this is a xdd site made by a xdd new web developer "/>
+        <meta name="author" content="itsFramme"/>
+        <meta name="keyword" content="itsFramme"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>xdd site no.2</title>
+        <!-- css標籤，引入檔案要放在<head>裡的<link>標籤裡，rel="stylesheet"代表引入css檔案，相當於會把這個css檔案複製一份到這個html裡 -->
+        <!-- 這樣就不需要在<head>裡面再寫一個<style>然後把樣式通通放在html檔案裡，同時也可以讓一個css檔案被多個html檔案套用，達成多個網頁樣式統一 -->
+        
+        <link rel="stylesheet" href="index2.css"/>
+    </head>  
+    <body>
+        <!-- 定義多個不同的class，並賦予不同的屬性，就可以方便混搭與管理屬性 -->
+        <!-- id可以提供標籤一個"唯一"的識別名稱，同一個html檔裡面無法有重複的id，一個標籤也只能有一個id -->
+        <!-- class使用的是.(點)，id使用的是#(井字號)，但可以用，(逗點)來讓不同的class跟id擁有相同屬性  -->
+        <h1 class="title" id="css-h1">CSS TUTORIAL XDD</h1>
+        <h2 id="HR1">HELLO RAT 1</h2>
+        <h2 id="HR2" >HELLO RAT 2</h2>
+
+        <p class="rat background-grey"> ddx </p>
+        <p class="rat"> xpp </p>
+        <p class="rat"> ppx </p>
+        <p class="HAH background-grey"> HAH </p>
+        <p class="HAH"> TAH </p>
+        <p class="HAH"> HAHdro </p>
+
+        <ul>
+            <li>caedrel's twitch</li>
+            <li>caedrel's YT</li>
+            <li>caedrel clips YT</li>
+        </ul>
+
+        <label> LOCKIN </label><input class="input" type="text" placeholder="LOCKIN"/>
+        <br/>
+        <label> CUH    </label><input type="text" placeholder="CUH"/>
+        <br/>
+        <br/>
+
+        <!-- flex 在外層的div加上display:flex的屬性，預設功能就會讓裡面的物件主軸變成橫向排列，次軸縱向-->
+        <!-- 若在裡面的3個box都寫上flex:1，等於會佔滿顯示空間，每個div平分共佔1/3 -->
+        <!-- order可以屬性改變主軸上的物件排列順序，數字越小則越靠近左邊(次軸初始排列順序為左)， -->
+        <!-- flex-wrap:wrap可以自動換行，flex-direction: column可以讓一個項目內所有子項目垂直排序-->
+
+        <!-- 但若沒有display:flex則flex、flex-wrap、flex-direction、justify-content，align-item就不會生效 -->
+
+        <!-- 因此當上一行的三個標籤一起寫的時候等於是把主軸從Y改成X軸又改回Y軸，只是多了自動換行功能 -->
+        <!-- justify-content是主軸對齊，align-items是次軸對齊 -->
+        <!-- justify-content常用的有:center、spacearound、space-between、space-around、space-evenly-->
+        <!-- 若一個物件裡有多行的物件時，則可以把align-items換成align-contents -->
+        <div class=" container ">
+            <div class=" box1 "> 區塊1 </div>
+            <div class=" box2 "> 區塊2 </div>
+            <div class=" box3 "> 區塊3 </div>
+            <div class=" box1 "> 區塊4 </div>
+            <div class=" box2 "> 區塊5 </div>
+            <div class=" box3 "> 區塊6 </div>
+            <div class=" box1 "> 區塊7 </div>
+            <div class=" box2 "> 區塊8 </div>
+            <div class=" box3 "> 區塊9 </div>
+        </div>
+        <br/>
+
+        <!-- animation -->
+        <!-- 設定@keyframes屬性和名字便可套用animation-name到整合所有動畫的CSS捆包裡, box:animation可以加上:hover，播放動畫時間就會從每次網頁重新更新變成只有滑鼠移到上方才會開始 -->
+        <!--   animation-duration決定每次動畫長度、animation-iteration-count決定動畫重複次數、animation-delay決定到動畫開始前的時間 -->
+        <!-- @keyframes裡面加上不同的%數就可設定關鍵偵，也可在{}裡設定顏色跟位置 -->
+        <div class="box4 box-animation"></div>
+
+
+    </body>
+</html>
+
+<!-- display flex-direction justify-content align-items position-->

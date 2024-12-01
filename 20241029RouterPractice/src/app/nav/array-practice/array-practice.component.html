@@ -1,0 +1,31 @@
+<!-- 矩陣按鈕 -->
+<div class="arrayButtonBigDiv" >
+  @for(data of arrayButton; track data){
+  <div  class="arrayButtonDiv">
+    <button class="arrayButton" routerLink="{{data.link}}" routerLinkActive="{{data.linkActive}}">{{data.tagName}}</button>
+  </div>
+}
+</div>
+<!-- [routerLink]="data.link" [routerLinkActive]="data.linkActive"  -->
+
+
+<!-- 矩陣練習2 -->
+@for(data of userArray; track data){
+<div class="playerStatus">
+  <h1 class="playerName">{{data.userName}}</h1>
+  <ul>
+    <p>擁有道具:</p>
+    @for(props of data.props;track props.propsName){
+    <li class="props">{{props.propsName}}數量:{{props.amount}}</li>
+    }
+  </ul>
+</div>
+}
+
+
+<!-- 矩陣練習1 -->
+@for(data of arrayData3; track data.id){
+@for(user of data.userData; track user.userId){
+<h3>{{user.userId}}</h3>
+}
+}
